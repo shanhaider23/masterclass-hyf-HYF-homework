@@ -10,7 +10,7 @@ int[] GetResult(int[] arr)
     {
         if (n > 0)
         {
-            positiveNumber =positiveNumber * n;
+            positiveNumber = positiveNumber * n;
 
         }
         else

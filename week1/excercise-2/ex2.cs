@@ -3,7 +3,7 @@
 string input = "Intellectualization";
 int GetVowelCount(string str)
 {
-int vowelCount = 0;
+    int vowelCount = 0;
     foreach (char letter in str)
     {
         if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
@@ -14,4 +14,4 @@ int vowelCount = 0;
     return vowelCount;
 }
 
-Console.WriteLine($"Number of vowels: {GetVowelCount(input)}"); 
+Console.WriteLine($"Number of vowels: {GetVowelCount(input)}");
