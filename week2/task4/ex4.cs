@@ -7,10 +7,7 @@ PrintTime(time);
 
 void PrintTime(JupiterTime time)
 {
-
     Console.WriteLine($"{time.Hours}:{time.Minutes}");
-
-
 }
 public class JupiterTime
 {

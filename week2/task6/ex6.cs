@@ -16,7 +16,8 @@ public class Signaler
 
     public void Inform()
     {
-        if (Times == null) Console.WriteLine("No timers added yet.");
+        List<JupiterTime> Times = new List<JupiterTime>();
+        if (Times.Count == null) Console.WriteLine("No timers added yet.");
         else
         {
             foreach (var Time in Times)

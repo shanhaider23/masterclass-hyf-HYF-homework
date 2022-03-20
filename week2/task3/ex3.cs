@@ -31,13 +31,13 @@ public class JupiterTime
     public JupiterTime AddHours(int hours)
     {
         Hours += hours;
-        if (Hours > 23)
+        if (Hours > 9)
         {
-            Hours -= 24;
+            Hours -= 10;
         }
         if (Hours < 0)
         {
-            Hours = Hours + 24;
+            Hours = Hours + 10;
         }
         return new JupiterTime(Hours, Minutes);
     }
