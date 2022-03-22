@@ -1,3 +1,4 @@
+
 namespace MealsharingNET.Models;
 
 public class Meal
@@ -7,7 +8,7 @@ public class Meal
     public string Description { get; set; }
     public string Location { get; set; }
     public DateTime When { get; set; }
-    public int Price { get; set; }
+    public Decimal Price { get; set; }
 
     public DateTime CreatedDate { get; set; }
 

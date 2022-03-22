@@ -19,9 +19,9 @@ public class MealController : ControllerBase
         return _repo.ListMeals().ToList();
     }
     [HttpPost("Add")]
-    public void AddMeal([FromBody] Meal m)
+    public void AddMeal([FromBody] Meal meal)
     {
-        _repo.Add(m);
+        _repo.Add(meal);
     }
 
     [HttpGet("GetMeal")]

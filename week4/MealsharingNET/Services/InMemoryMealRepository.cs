@@ -35,9 +35,10 @@ public class InMemoryMealRepository : IMealRepository
     {
         return Meals;
     }
-    public Meal GetMeal(int id)
-    {
 
-        return Meals.SingleOrDefault(m => m.ID == id);
+    public void Delete(int ID)
+    {
+        Meals.RemoveAll(meal => meal.ID == ID);
     }
+
 }

@@ -33,13 +33,5 @@ public class InMemoryReservationRepository : IReservationRepository
     {
         Reservations.Add(reservation);
     }
-    public IEnumerable<Reservation> GetReservation(int id)
-    {
-        return Reservations.SingleOrDefault(reservation => reservation.ID == id);
-    }
 
-    public IEnumerable<Reservation> MealReservations(int id)
-    {
-        return Reservations.SingleOrDefault(reservation => reservation.MealID == id);
-    }
 }
