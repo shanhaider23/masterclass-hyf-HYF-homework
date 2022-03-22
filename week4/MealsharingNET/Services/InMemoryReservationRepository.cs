@@ -33,5 +33,9 @@ public class InMemoryReservationRepository : IReservationRepository
     {
         Reservations.Add(reservation);
     }
+    public Reservation GetReservation(int id)
+    {
+        return Reservations.SingleOrDefault(reservation => reservation.ID == id);
+    }
 
 }
