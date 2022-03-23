@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week4\\MealsharingNET\\MealsharingNET.csproj": {}
+    "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week5\\MealsharingNET\\MealsharingNET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week4\\MealsharingNET\\MealsharingNET.csproj": {
+    "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week5\\MealsharingNET\\MealsharingNET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week4\\MealsharingNET\\MealsharingNET.csproj",
+        "projectUniqueName": "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week5\\MealsharingNET\\MealsharingNET.csproj",
         "projectName": "MealsharingNET",
-        "projectPath": "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week4\\MealsharingNET\\MealsharingNET.csproj",
+        "projectPath": "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week5\\MealsharingNET\\MealsharingNET.csproj",
         "packagesPath": "C:\\Users\\shanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week4\\MealsharingNET\\obj\\",
+        "outputPath": "C:\\Users\\shanh\\Desktop\\dotnet_masterclass\\masterclass-hyf-HYF-homework\\week5\\MealsharingNET\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

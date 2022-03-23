@@ -1,12 +1,11 @@
 namespace MealsharingNET.Models;
-
 public class Reservation
 {
     public int ID { get; set; }
-    public int NumberOfGuests { get; set; }
     public int MealID { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public string ContactName { get; set; }
-    public string ContactEmail { get; set; }
-    public int MaxReservations { get; set; }
+    public string Name { get; set; }
+    public string Email { get; set; }
+    public string Date { get; set; }
+    public int NoOfPersons { get; set; }
+
 }

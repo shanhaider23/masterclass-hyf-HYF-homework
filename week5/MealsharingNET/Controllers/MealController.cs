@@ -1,32 +1,30 @@
-using Microsoft.AspNetCore.Mvc;
 
+using Microsoft.AspNetCore.Mvc;
+using MealsharingNET.Models;
 namespace MealsharingNET.Controllers;
 
 [ApiController]
-[Route("[meals]")]
-public class MealController : ControllerBase
+[Route("meals")]
+public class MealsController : ControllerBase
 {
     private IMealRepository _repo;
-
-    public MealController(IMealRepository repo)
+    public MealsController(IMealRepository repo)
     {
         _repo = repo;
     }
-
     [HttpGet("List")]
     public List<Meal> ListAllMeals()
     {
-        return _repo.ListMeals().ToList();
+        return _repo.ListOfMeals().ToList();
     }
     [HttpPost("Add")]
     public void AddMeal([FromBody] Meal meal)
     {
-        _repo.Add(meal);
+        _repo.AddMeal(meal);
     }
-
-    [HttpGet("GetMeal")]
-    public List<Meal> GetMeal(int id)
+    [HttpGet("FindMealById")]
+    public Meal FindMealById(int id)
     {
-        return _repo.GetMeal(id).ToList();
+        return _repo.FindMealById(id);
     }
 }

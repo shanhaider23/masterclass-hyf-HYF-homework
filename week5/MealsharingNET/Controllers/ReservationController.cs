@@ -1,39 +1,36 @@
 using Microsoft.AspNetCore.Mvc;
 using MealsharingNET.Models;
-
 namespace MealsharingNET.Controllers;
 
 [ApiController]
-[Route("Reservations")]
+[Route("reservations")]
 public class ReservationController : ControllerBase
 {
     private IReservationRepository _repo;
-
     public ReservationController(IReservationRepository repo)
     {
         _repo = repo;
     }
-
-    [HttpGet("List")]
+    [HttpGet("ListAllReservations")]
     public List<Reservation> ListAllReservations()
     {
-        return _repo.ListReservations().ToList();
+        return _repo.ReservationList().ToList();
     }
-    [HttpPost("Add")]
-    public void AddReservation([FromBody] Reservation r)
+    [HttpPost("AddReservation")]
+    public void AddReservation([FromBody] Reservation reservation)
     {
-        _repo.Add(r);
+        _repo.AddReservation(reservation);
+    }
+    [HttpGet("FindReservationById")]
+    public Reservation FindReservationById(int id)
+    {
+        return _repo.FindReservationById(id);
+    }
+    [HttpGet("FindResrvationByMealId")]
+
+    public List<Reservation> FindResrvationByMealId(int mealId)
+    {
+        return _repo.FindResrvationByMealId(mealId).ToList();
     }
 
-    [HttpGet("GetReservation")]
-    public List<Reservation> GetReservation(int id)
-    {
-        return _repo.GetReservation(id).ToList();
-    }
-
-    [HttpGet("GetMealReservations")]
-    public List<Reservation> MealReservations(int id)
-    {
-        return _repo.MealReservations(id).ToList();
-    }
 }
