@@ -1,0 +1,7 @@
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.csproj.AssemblyReference.cache
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.AssemblyInfoInputs.cache
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.AssemblyInfo.cs
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.csproj.CoreCompileInputs.cache
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shanh\Desktop\dotnet_masterclass\masterclass-hyf-HYF-homework\week4\MealsharingNET\obj\Debug\net6.0\MealsharingNET.MvcApplicationPartsAssemblyInfo.cache
