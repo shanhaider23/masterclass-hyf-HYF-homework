@@ -3,8 +3,8 @@ namespace MealsharingNET;
 
 public interface IMealRepository
 {
-    IEnumerable<Meal> ListOfMeals();
-    void AddMeal(Meal meal);
+    Task<IEnumerable<Meal>> ListOfMeals();
+    Task AddMeal(Meal meal);
 
-    Meal FindMealById(int id);
+    Task<Meal> FindMealById(int id);
 }

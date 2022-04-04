@@ -13,18 +13,18 @@ public class MealsController : ControllerBase
         _repo = repo;
     }
     [HttpGet("List")]
-    public List<Meal> ListAllMeals()
+    public async Task<IEnumerable<Meal>> ListAllMeals()
     {
-        return _repo.ListOfMeals().ToList();
+        return await _repo.ListOfMeals();
     }
     [HttpPost("Add")]
-    public void AddMeal([FromBody] Meal meal)
+    public async Task AddMeal([FromBody] Meal meal)
     {
-        _repo.AddMeal(meal);
+        await _repo.AddMeal(meal);
     }
     [HttpGet("FindMealById")]
-    public Meal FindMealById(int id)
+    public async Task<Meal> FindMealById(int id)
     {
-        return _repo.FindMealById(id);
+        return await _repo.FindMealById(id);
     }
 }
