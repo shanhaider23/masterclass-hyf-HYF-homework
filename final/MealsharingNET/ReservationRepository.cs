@@ -16,7 +16,7 @@ public class ReservationRepository : IReservationRepository
     public async Task<Reservation> FindReservationById(int id)
     {
         await using var connection = new MySqlConnection(Shared.ConnectionString);
-        var reservation = await connection.QueryFirstAsync<Reservation>("SELECT * FROM reservations WHERE ID=Id");
+        var reservation = await connection.QueryFirstAsync<Reservation>("SELECT id, number_of_guests as NoOfPersons, meal_id, created_date, email, phone, name FROM reservations WHERE ID=@Id", id);
         return reservation;
     }
 
@@ -25,7 +25,7 @@ public class ReservationRepository : IReservationRepository
     public async Task<IEnumerable<Reservation>> ReservationList()
     {
         await using var connection = new MySqlConnection(Shared.ConnectionString);
-        var reservations = await connection.QueryAsync<Reservation>("SELECT * FROM reservations");
+        var reservations = await connection.QueryAsync<Reservation>("SELECT id, number_of_guests as NoOfPersons, meal_id, created_date, email, phone, name FROM reservations");
         return reservations;
     }
 
