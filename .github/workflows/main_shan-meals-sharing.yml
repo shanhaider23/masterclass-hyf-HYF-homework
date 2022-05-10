@@ -19,14 +19,14 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: "6.0.x"
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build final/MealsharingNET--configuration Release^M
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish final/MealsharingNET -c Release -o ${{env.DOTNET_ROOT}}/myapp^M
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     environment:
-      name: 'Production'
+      name: "Production"
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'shan-meals-sharing'
-          slot-name: 'Production'
+          app-name: "shan-meals-sharing"
+          slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2F7110EB66B6439FBE6A2131C08D9111 }}
           package: .
