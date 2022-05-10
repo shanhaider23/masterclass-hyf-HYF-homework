@@ -23,10 +23,10 @@ jobs:
           include-prerelease: true
 
       - name: Build with dotnet
-        run: dotnet build final/MealsharingNET--configuration Release^M
+        run: dotnet build final/MealsharingNET --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish final/MealsharingNET -c Release -o ${{env.DOTNET_ROOT}}/myapp^M
+        run: dotnet publish final/MealsharingNET -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
