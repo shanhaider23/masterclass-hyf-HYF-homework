@@ -16,6 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - run: npm install
+        working-directory: final/MealsharingNET/ClientApp
+      - run: npm run build
+        working-directory: final/MealsharingNET/ClientApp
+
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
